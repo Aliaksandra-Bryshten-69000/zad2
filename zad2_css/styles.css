@@ -1,57 +1,223 @@
+:root{
 
+--bg:#e8f5e9;
+--card:#ffffff;
+--text:#1b3a2f;
+--muted:#4a6b57;
+--accent:#2e7d32;
+--line:#c8e6c9;
+--chip:#d7f2d9;
 
-body {
-    font-family: "Segoe UI", Arial, sans-serif;
-    background-color: #e8f5e9;
-    margin: 40px;
-    color: #1b3a2f;
 }
 
-h1 {
-    color: #1b5e20;
-    text-align: center;
-    margin-bottom: 30px;
+*{
+box-sizing:border-box;
 }
 
+body{
 
-h2 {
-    color: #2e7d32;
-    border-bottom: 2px solid #66bb6a;
-    padding-bottom: 5px;
+margin:40px;
+
+font-family:"Segoe UI", Arial, sans-serif;
+
+background:var(--bg);
+
+color:var(--text);
+
+line-height:1.6;
+
 }
 
+.wrap{
 
-section {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 25px;
-    border-left: 6px solid #4caf50;
-    border-radius: 6px;
+max-width:1000px;
+
+margin:auto;
+
 }
 
+header{
 
+display:grid;
 
-p {
-    line-height: 1.6;
+grid-template-columns:1.3fr 1fr;
+
+gap:30px;
+
+background:var(--card);
+
+padding:25px;
+
+border-radius:10px;
+
+border:1px solid var(--line);
+
+margin-bottom:25px;
+
 }
 
+.name{
 
+font-size:34px;
 
-ul {
-    padding-left: 20px;
+margin-bottom:5px;
+
+color:var(--accent);
+
 }
 
-li {
-    margin-bottom: 6px;
+.role{
+
+color:var(--muted);
+
+margin-bottom:10px;
+
 }
 
+.summary{
 
+margin-bottom:10px;
 
-a {
-    color: #2e7d32;
-    text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
+.badge{
+
+font-size:13px;
+
+color:var(--muted);
+
+}
+
+.meta{
+
+border-left:2px solid var(--line);
+
+padding-left:20px;
+
+}
+
+.meta ul{
+
+list-style:none;
+
+padding:0;
+
+}
+
+.meta li{
+
+margin-bottom:6px;
+
+}
+
+main{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:20px;
+
+}
+
+section{
+
+background:var(--card);
+
+padding:20px;
+
+border-radius:10px;
+
+border:1px solid var(--line);
+
+}
+
+section h2{
+
+color:var(--accent);
+
+font-size:15px;
+
+margin-bottom:10px;
+
+text-transform:uppercase;
+
+}
+
+.item{
+
+margin-top:10px;
+
+}
+
+.title{
+
+font-weight:bold;
+
+}
+
+.date{
+
+color:var(--muted);
+
+font-size:13px;
+
+}
+
+.where{
+
+color:var(--muted);
+
+font-size:14px;
+
+}
+
+.chips{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:8px;
+
+margin-top:10px;
+
+}
+
+.chip{
+
+background:var(--chip);
+
+padding:6px 10px;
+
+border-radius:20px;
+
+font-size:12px;
+
+}
+
+footer{
+
+text-align:center;
+
+margin-top:30px;
+
+color:var(--muted);
+
+font-size:12px;
+
+}
+
+a{
+
+color:var(--accent);
+
+text-decoration:none;
+
+}
+
+a:hover{
+
+text-decoration:underline;
+
 }
